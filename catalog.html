@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>nerds-catalog</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class='catalog'>
+		<header class="main-header ">
+			<div class="container">
+				<div class="main-navigation ">
+					<a href="index.html" class="main-header-logo">
+						<img src="img/nerds-logo.svg" alt="Логотип">
+					</a>
+					<ul class="site-navigation">
+						<li><a href="#">СТУДИЯ</a></li>
+						<li><a href="#">КЛИЕНТЫ</a></li>
+						<li><a href="catalog.html" >МАГАЗИН</a></li>
+						<li><a href="#contacts">КОНТАКТЫ</a></li>
+					</ul>
+					<ul class="site-basket">
+						<li><a href="#">Корзина</a></li>
+					</ul>
+				</div>
+			</div>
+			<h1>Магазин готовых шаблонов</h1>
+		</header>
+		<main >
+			<section class='main-catalog container'>
+				<section class='catalog-filtr'>
+					<form class='catalog-form' action="#" method="post">
+						<fieldset class='catalog-price'>
+							<legend>СТОИМОСТЬ:</legend>
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar" style="margin-left: 0%; width: 65%"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-prace">от<input type="text" value="0" name="min-prace"></label>
+									<label class="max-prace">до<input type="text" value="15000" name="max-prace"></label>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class='catalog-grid'>
+							<legend>СЕТКА:</legend>
+							<ul>
+								<li>
+									<input class="visually-hidden" type="radio" name="grid" id="adapt" checked="checked">
+									<label for="adapt">Адаптивная</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="radio" name="grid" id="fix">
+									<label for="fix">Фиксированная</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="radio" name="grid" id="rubber">
+									<label for="rubber">Резиновая</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class='catalog-features'>
+							<legend>ОСОБЕННОСТИ:</legend>
+							<ul>
+								<li>
+									<input class="visually-hidden" type="checkbox" name="features" id="slider-features" checked>
+									<label for="slider-features">Слайдер</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="checkbox" name="features" id="block-features">
+									<label for="block-features">Блок преимуществ</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="checkbox" name="features" id="news-features" checked>
+									<label for="news-features">Новости</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="checkbox" name="features" id="gallery-features">
+									<label for="gallery-features">Галерея</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="checkbox" name="features" id="basket-features">
+									<label for="gallery-features">Корзина</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class='btn btn-catalog' type='submit'>Показать</button>
+					</form>
+				</section>
+				<section class='catalog-site'>
+					<section class='catalog-sort'>
+						<ul class='catalog-header'>
+							<li>СОРТИРОВАТЬ:</li>
+						</ul>
+						<ul class='catalog-filtr-goods'>
+							<li><a href="#">ПО ЦЕНЕ</a></li>
+							<li><a href="#">ПО ТИПУ</a></li>
+							<li><a href="#">ПО НАЗВАНИЮ</a></li>
+							<li><a class='catalog-icon-sort1' href="#"></a></li>
+							<li><a class='catalog-icon-sort2' href="#"></a></li>
+						</ul>
+					</section>
+					<section class='catalog-goods'>
+						<ul>
+							<li class='catalog-sedona'>
+								<img class='browser' src="img/browserb.png" alt="browser">
+								<a href="#"><img src="img/img-sedona.jpg" alt="sedona"></a>
+								<div class="modal-cite">
+									<h3>SEDONA</h3>
+									<p>Информационный сайт <br>
+									для туристов</p>
+									<button class='btn btn-basket' type='submit'>9 900 РУБ.</button>
+								</div>
+							</li>
+							
+							<li class='catalog-pink'>
+								<img class='browser2' src="img/browserb.png" alt="browser">
+								<a href="#"><img src="img/img-pink.jpg" alt="pink"></a>
+								<div class="modal-cite2">
+									<h3>PINK APP</h3>
+									<p>Продуктовый лендинг <br>
+									приложения для iOS и Android</p>
+									<button class='btn btn-basket' type='submit'>9 900 РУБ.</button>
+								</div>
+							</li>
+							
+							<li class='catalog-barbershop'>
+								<img class='browser3' src="img/browserb.png" alt="browser">
+								<a href="#"><img src="img/img-barbershop.jpg" alt="barbershop"></a>
+								<div class="modal-cite3">
+									<h3>BARBERSHOP</h3>
+									<p>Сайт салоны красоты.<br>
+									Для мужчин, да.</p>
+									<button class='btn btn-basket' type='submit'>9 900 РУБ.</button>
+								</div>
+							</li>
+							
+							<li class='catalog-mishka'>
+								<img class='browser4' src="img/browserb.png" alt="browser">
+								<a href="#"><img src="img/img-mishka.jpg" alt="mishka"></a>
+								<div class="modal-cite4">
+									<h3>MISHKA</h3>
+									<p>Интернет-магазин <br>
+									вязаных игрушек</p>
+									<button class='btn btn-basket' type='submit'>9 900 РУБ.</button>
+								</div>
+							</li>
+							
+							<li class='catalog-aplus'>
+								<img class='browser5' src="img/browserb.png" alt="browser">
+								<a href="#"><img src="img/img-aplus.jpg" alt="aplus"></a>
+								<div class="modal-cite5">
+									<h3>A PLUS</h3>
+									<p>Лендинг курсов повышения <br>
+									квалификации</p>
+									<button class='btn btn-basket' type='submit'>9 900 РУБ.</button>
+								</div>
+							</li>
+							
+							<li class='catalog-kvast'>
+								<img class='browser6' src="img/browserb.png" alt="browser">
+								<a href="#"><img src="img/img-kvast.jpg" alt="kvast"></a>
+								<div class="modal-cite6">
+									<h3>КВАСТ</h3>
+									<p>Промо-сайт производителя <br>
+									крафтового кваса</p>
+									<button class='btn btn-basket' type='submit'>9 900 РУБ.</button>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<div class='catalog-page'>
+						<ul>
+							<li><a class='btn btn-catalog' href="#">1</a></li>
+							<li><a class='btn btn-catalog' href="#">2</a></li>
+							<li><a class='btn btn-catalog' href="#">3</a></li>
+							<li><a class='btn btn-catalog' href="#">СЛЕДУЮЩАЯ</a></li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			
+			<section id="contacts" class='map'>
+				<iframe src="https://yandex.ru/map-widget/v1/-/CBR~BIcKWD" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+				<div class='address'>
+					<h3>NЁRDS DESIGN STUDIO</h3>
+					<p>191186, Санкт-Петербург, <br>
+					ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<button class='btn js-btn'>НАПИШИТЕ НАМ</button>
+				</div>
+				<img src="img/map-marker.png" alt="Nerds marker">
+			</section>
+			<section class='modal post'>
+				<h2>Напишите нам</h2>
+				<form class='post-message' action="index.html" method="post">
+					<p class='post-login'>
+						<label for="name">Ваше имя:</label>
+						<input class='post-name' id='name' type="text" name='name' placeholder='Имя Фамилия'>
+					</p>
+					<p class='post-login'>
+						<label for="email">Ваш e-mail:</label>
+						<input class='post-email' id='email' type="text" name='email' placeholder='email@example.com'>
+					</p>
+					<p>
+						<label for="letter">Текст письма:</label>
+						<textarea name="letter" id="letter" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+					</p>
+					<button class='btn btn-modal' type='submit'>Отправить</button>
+				</form>
+				<button class='modal-close' type='button'>Закрыть</button>
+			</section>
+		</main>
+		<footer class='main-footer container'>
+			<div class='footer-social'>
+				<ul class='footer-btn'>
+					<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+					<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+					<li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
+				</ul>
+			</div>
+			<p> <span>Давайте дружить, это выгодно!</span><br>
+		Скидка 10% для друзей из социальных сетей</p>
+	</footer>
+	<script>
+	var request = document.querySelector(".js-btn")
+	var popup = document.querySelector(".post")
+	var close = document.querySelector(".modal-close")
+	request.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popup.classList.add("post-show")
+	});
+	close.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popup.classList.remove("post-show")
+	});
+
+	var focus = document.querySelector(".catalog-sedona")
+	var catalogPopup = document.querySelector(".modal-cite")
+    var browser = document.querySelector(".browser")
+    
+	focus.addEventListener("mousemove", function (evt) {
+	evt.preventDefault();
+	catalogPopup.classList.add("modal-cite-sedona")
+	browser.classList.add("browser-sedona")
+	});
+	focus.addEventListener("mouseout", function (evt) {
+	evt.preventDefault();
+	catalogPopup.classList.remove("modal-cite-sedona")
+	browser.classList.remove("browser-sedona")
+	});
+
+	var focuspink = document.querySelector(".catalog-pink")
+	var catalogPopuppink = document.querySelector(".modal-cite2")
+    var browserpink = document.querySelector(".browser2")
+    
+	focuspink.addEventListener("mousemove", function (evt) {
+	evt.preventDefault();
+	catalogPopuppink.classList.add("modal-cite-pink")
+	browserpink.classList.add("browser-pink")
+	});
+	focuspink.addEventListener("mouseout", function (evt) {
+	evt.preventDefault();
+	catalogPopuppink.classList.remove("modal-cite-pink")
+	browserpink.classList.remove("browser-pink")
+	});
+
+
+
+	var focusbar = document.querySelector(".catalog-barbershop")
+	var catalogPopupbar = document.querySelector(".modal-cite3")
+    var browserbar = document.querySelector(".browser3")
+    
+	focusbar.addEventListener("mousemove", function (evt) {
+	evt.preventDefault();
+	catalogPopupbar.classList.add("modal-cite-bar")
+	browserbar.classList.add("browser-bar")
+	});
+	focusbar.addEventListener("mouseout", function (evt) {
+	evt.preventDefault();
+	catalogPopupbar.classList.remove("modal-cite-bar")
+	browserbar.classList.remove("browser-bar")
+	});
+
+	var focusmishka = document.querySelector(".catalog-mishka")
+	var catalogPopupmishka = document.querySelector(".modal-cite4")
+    var browsermishka = document.querySelector(".browser4")
+    
+	focusmishka.addEventListener("mousemove", function (evt) {
+	evt.preventDefault();
+	catalogPopupmishka.classList.add("modal-cite-mishka")
+	browsermishka.classList.add("browser-mishka")
+	});
+	focusmishka.addEventListener("mouseout", function (evt) {
+	evt.preventDefault();
+	catalogPopupmishka.classList.remove("modal-cite-mishka")
+	browsermishka.classList.remove("browser-mishka")
+	});
+
+	var focusaplus = document.querySelector(".catalog-aplus")
+	var catalogPopupaplus = document.querySelector(".modal-cite5")
+    var browseraplus = document.querySelector(".browser5")
+    
+	focusaplus.addEventListener("mousemove", function (evt) {
+	evt.preventDefault();
+	catalogPopupaplus.classList.add("modal-cite-aplus")
+	browseraplus.classList.add("browser-aplus")
+	});
+	focusaplus.addEventListener("mouseout", function (evt) {
+	evt.preventDefault();
+	catalogPopupaplus.classList.remove("modal-cite-aplus")
+	browseraplus.classList.remove("browser-aplus")
+	});
+
+	var focuskvast = document.querySelector(".catalog-kvast")
+	var catalogPopupkvast = document.querySelector(".modal-cite6")
+    var browserkvast = document.querySelector(".browser6")
+    
+	focuskvast.addEventListener("mousemove", function (evt) {
+	evt.preventDefault();
+	catalogPopupkvast.classList.add("modal-cite-kvast")
+	browserkvast.classList.add("browser-kvast")
+	});
+	focuskvast.addEventListener("mouseout", function (evt) {
+	evt.preventDefault();
+	catalogPopupkvast.classList.remove("modal-cite-kvast")
+	browserkvast.classList.remove("browser-kvast")
+	});
+
+	</script>
+</body>
+</html>
